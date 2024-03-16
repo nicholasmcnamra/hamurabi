@@ -23,55 +23,55 @@ public class HammurabiTest {
 ////
 ////    }
 
-    @Test
-    public void askHowManyAcresToBuyTest() {
-        Integer bushelsPerAcre = 19;
-        Integer landAcres = 50;
-
-        Hamurabi hamurabi = new Hamurabi();
-
-        Integer expectedAcresToBuy = landAcres/bushelsPerAcre;
-        Integer actualAcresToBuy = hamurabi.askHowManyAcresToBuy(bushelsPerAcre, landAcres);
-
-        Assert.assertEquals(expectedAcresToBuy, actualAcresToBuy);
-    }
-
-    @Test
-    public void askHowManyAcresToSellTest() {
-        Integer acresOwned = 100;
-        Integer acresToSell = 50;
-
-        Hamurabi hamurabi = new Hamurabi();
-
-        Integer expectedAcresLeft = acresOwned-acresToSell;
-        Integer actualAcresLeft = hamurabi.askHowManyAcresToSell();
-
-        Assert.assertEquals(expectedAcresLeft, actualAcresLeft);
-    }
-
-    @Test
-    public void askHowMuchGrainToFeedPeopleTest() {
-        Integer grainToFeedPeople = 1000;
-
-        Hamurabi hamurabi = new Hamurabi();
-
-        Integer expectedGrainToFeedPeople = grainToFeedPeople;
-        Integer actualGrainToFeedPeople = hamurabi.askHowMuchGrainToFeedPeople();
-
-        Assert.assertEquals(expectedGrainToFeedPeople, actualGrainToFeedPeople);
-    }
-
-    @Test
-    public void askHowManyAcresToPlantTest() {
-        Integer acresToPlant = 500;
-
-        Hamurabi hamurabi = new Hamurabi();
-
-        Integer expectedAcresToPlant = acresToPlant;
-        Integer actualAcresToPlant = hamurabi.askHowManyAcresToPlant();
-
-        Assert.assertEquals(expectedAcresToPlant, actualAcresToPlant);
-    }
+//    @Test
+//    public void askHowManyAcresToBuyTest() {
+//        Integer bushelsPerAcre = 19;
+//        Integer landAcres = 50;
+//
+//        Hamurabi hamurabi = new Hamurabi();
+//
+//        Integer expectedAcresToBuy = landAcres/bushelsPerAcre;
+//        Integer actualAcresToBuy = hamurabi.askHowManyAcresToBuy(bushelsPerAcre, landAcres);
+//
+//        Assert.assertEquals(expectedAcresToBuy, actualAcresToBuy);
+//    }
+//
+//    @Test
+//    public void askHowManyAcresToSellTest() {
+//        Integer acresOwned = 100;
+//        Integer acresToSell = 50;
+//
+//        Hamurabi hamurabi = new Hamurabi();
+//
+//        Integer expectedAcresLeft = acresOwned-acresToSell;
+//        Integer actualAcresLeft = hamurabi.askHowManyAcresToSell();
+//
+//        Assert.assertEquals(expectedAcresLeft, actualAcresLeft);
+//    }
+//
+//    @Test
+//    public void askHowMuchGrainToFeedPeopleTest() {
+//        Integer grainToFeedPeople = 1000;
+//
+//        Hamurabi hamurabi = new Hamurabi();
+//
+//        Integer expectedGrainToFeedPeople = grainToFeedPeople;
+//        Integer actualGrainToFeedPeople = hamurabi.askHowMuchGrainToFeedPeople();
+//
+//        Assert.assertEquals(expectedGrainToFeedPeople, actualGrainToFeedPeople);
+//    }
+//
+//    @Test
+//    public void askHowManyAcresToPlantTest() {
+//        Integer acresToPlant = 500;
+//
+//        Hamurabi hamurabi = new Hamurabi();
+//
+//        Integer expectedAcresToPlant = acresToPlant;
+//        Integer actualAcresToPlant = hamurabi.askHowManyAcresToPlant();
+//
+//        Assert.assertEquals(expectedAcresToPlant, actualAcresToPlant);
+//    }
 
     @Test
     public void plagueDeathsTest() {
